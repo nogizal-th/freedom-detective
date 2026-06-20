@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agent Verification</title>
+</head>
+<body>
+    <h1>AUTHORIZED PERSONNEL ONLY</h1>
+
+    <input type="password" id="l4z1g0n" placeholder="Access Code">
+    <button onclick="checkCode()">Verify</button>
+
+    <script>
+        function checkCode() {
+            const code = document.getElementById("code").value;
+
+            if (code === "LANTERN29") {
+                window.location.href = "https://freedom_detective-identity-page.com";
+            } else {
+                alert("Access Denied");
+            }
+        }
+    </script>
+</body>
+</html>
