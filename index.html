@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Agent Verification</title>
+<title>Agent Verification</title>
+
+<style>
+body{
+    background:black;
+    color:white;
+    font-family:Consolas,monospace;
+    text-align:center;
+    margin-top:150px;
+}
+
+h1{
+    color:#00aaff;
+    text-shadow:
+        0 0 5px #00aaff,
+        0 0 10px #00aaff,
+        0 0 20px #00aaff,
+        0 0 40px #00aaff;
+}
+
+input{
+    background:black;
+    color:white;
+    border:2px solid white;
+    padding:12px;
+    width:250px;
+    border-radius:8px;
+
+    box-shadow:
+        0 0 5px white,
+        0 0 10px white;
+}
+
+button{
+    background:black;
+    color:white;
+    border:2px solid white;
+    padding:12px 20px;
+    margin-left:10px;
+    border-radius:8px;
+    cursor:pointer;
+
+    box-shadow:
+        0 0 5px white,
+        0 0 10px white;
+}
+
+button:hover{
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+}
+</style>
+
 </head>
 <body>
-    <h1>AUTHORIZED PERSONNEL ONLY</h1>
 
-    <input type="password" id="code" placeholder="Access Code">
-    <button onclick="checkCode()">Verify</button>
+<h1>Freedom Detective</h1>
 
-    <script>
-        function checkCode() {
-            const code = document.getElementById("code").value;
+<input type="password" id="code" placeholder="Access Code">
 
-            if (code === "l4z1g0n") {
-                window.location.href = "https://docs.google.com/document/d/1UwIygbaStJ-lkh_sw9viszuu1E67R8ghp8EyVUnUlUw/edit?tab=t.0";
-            } else {
-                alert("Access Denied");
-            }
-        }
-    </script>
+<button onclick="checkCode()">Verify</button>
+
+<script>
+function checkCode() {
+    const code = document.getElementById("code").value;
+
+    if (code === "l4ziG0n") {
+        window.location.href = "https://docs.google.com/document/d/1Viys_TfSxKI7gQ3--N_fCBXsqec3qfcJvKvYi1rCr5A/edit?tab=t.0";
+    } else {
+        alert("Access Denied");
+    }
+}
+</script>
+
 </body>
 </html>
